@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de senhas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="password-generator">
+      <div id="password">
+        <input type="text" id="result" value="Senha a ser gerada" readonly />
+        <button id="copy-button">Copiar</button>
+      </div>
+
+      <label for="password-length">Tamanho da senha: </label>
+      <input
+        type="range"
+        id="password-length"
+        name="password-length"
+        min="4"
+        max="32"
+        value="8"
+        oninput="this.nextElementSibling.value = this.value"
+      />
+      <output>8</output>
+
+      <div id="options">
+        <label>
+          <input type="checkbox" id="lowercase-option" checked />
+          <span>Letras minúsculas (a-z)</span>
+        </label>
+        <label>
+          <input type="checkbox" id="uppercase-option" />
+          <span>Letras maiúsculas (A-Z)</span>
+        </label>
+        <label>
+          <input type="checkbox" id="number-option" />
+          <span>Números (0-9)</span>
+        </label>
+        <label>
+          <input type="checkbox" id="special-option" />
+          <span>Caracteres especiais (!@#$%&*)</span>
+        </label>
+      </div>
+      <button id="generate-button">Gerar Senha</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
