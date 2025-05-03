@@ -15,17 +15,17 @@
   <body>
     <div id="password-generator">
       <div id="password">
-        <input type="text" id="result" value="Senha a ser gerada" readonly />
+        <input type="text" id="result" value="Senha" readonly />
         <button id="copy-button">Copiar</button>
       </div>
 
-      <label for="password-length">Tamanho da senha: </label>
+      <label for="password-length">Tamanho da senha</label>
       <input
         type="range"
         id="password-length"
         name="password-length"
         min="4"
-        max="32"
+        max="64"
         value="8"
         oninput="this.nextElementSibling.value = this.value"
       />
@@ -46,7 +46,7 @@
         </label>
         <label>
           <input type="checkbox" id="special-option" />
-          <span>Caracteres especiais (!@#$%&*)</span>
+          <span>Caracteres especiais (!@#$%&*+-=)</span>
         </label>
       </div>
       <button id="generate-button">Gerar Senha</button>
