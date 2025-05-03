@@ -46,6 +46,11 @@ body {
   font-size: 18px;
 }
 
+#copy-button:hover {
+  background-color: rgb(189, 0, 0);
+  transition: all 0.3s ease-in-out;
+}
+
 #password-length {
   width: 95%;
   text-align: center;
@@ -71,6 +76,7 @@ body {
   width: 170px;
 }
 
-checkbox {
-  background-color: blue;
+#generate-button:hover {
+  color: rgb(189, 0, 0);
+  transition: all 0.3s ease-in-out;
 }
