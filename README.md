@@ -29,7 +29,7 @@ Este é um gerador de senhas simples que permite gerar senhas seguras com difere
 
 ## ▶️ Como Usar
 
-Entre no site: [Gerador de Senhas](https://geradordesenhas-efrals.netlify.app)
+Entre no site: [Gerador de Senhas](https://gerador-de-senhas-efrals.netlify.app)
 
 OU
 
